@@ -4,17 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <title>scorekeeper</title>
 </head>
 <body>
-
+<div id="content">
     <h1>My Score Keeper</h1>
 
-    <h3><big>Score:</big><span id="score1">0</span>to <span id="score2"> 0</span></h3>
+        <h3><big>Score:</big><span id="score1">0 </span>to <span id="score2"> 0</span></h3>
+    <div id="form-group">
+        <button type="submit" class="btn btn-success">Player 1</button>
+        <button type="submit" class="btn btn-success">Player 2</button>
+        <button type="reset" class="btn btn-danger">RESET</button>
+    </div>
 
-    <button type="submit">Player 1</button>
-    <button type="submit">Player 2</button>
-    <button type="reset">RESET</button>
-    
+    <div id="form-group">
+    <input type="numbers" value="5" name="limit" class="form-control">
+    </div>
+
+  <h3> The wiinner is: <span></span></h3>
+</div>  
 </body>
 </html>
